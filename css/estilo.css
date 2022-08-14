@@ -166,7 +166,13 @@ h1 {
     "img1 img1 img1 img1"
     "footer footer footer footer";
 }
-
+.aniImag{    
+  transition: height 0.1s, width 0.1s;
+}
+.aniImag :hover{
+  height: 200px ;
+  width: 250px;    
+}
 /*responsive mobile*/
 @media (max-width: 400px) {
   .texto {
@@ -190,3 +196,4 @@ h1 {
     display: none;
   }
 }
+/*prueba de rama tote*/

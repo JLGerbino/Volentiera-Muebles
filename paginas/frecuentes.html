@@ -10,7 +10,8 @@
       rel="shortcut icon"
       href="../imagenes/20220723_080532.png"
       type="image/x-icon"
-    />
+    />    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -19,7 +20,7 @@
         <div class="logo">
           <img src="../imagenes/logo sin fondo.png" width="200px" alt="Logo" />
         </div>
-        <ul class="encabezado">
+        <ul data-aos="fade-left" class="encabezado">
           <li><a href="../index.html">Inicio</a></li>
           <li><a href="nosotros.html">Nosotros</a></li>
           <li><a href="multimedia.html">Multimedia</a></li>
@@ -61,7 +62,7 @@
           /></a>
         </li>
       </ul>
-      <h1>Preguntas frecuentes</h1>
+      <h1 data-aos="fade-down">Preguntas frecuentes</h1>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi sed
         accusamus qui beatae tempora cum temporibus nostrum velit debitis amet
@@ -138,5 +139,9 @@
         <h5>Sitio web creado por Jose Luis Gerbino</h5>
       </footer>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

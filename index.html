@@ -11,6 +11,7 @@
       href="imagenes/20220723_080532.png"
       type="image/x-icon"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body class="gridPadre">
     <header>
@@ -19,7 +20,7 @@
         <div class="logo">
           <img src="imagenes/logo sin fondo.png" width="200px" alt="Logo" />
         </div>
-        <ul class="encabezado">
+        <ul data-aos="fade-left" class="encabezado">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="paginas/nosotros.html">Nosotros</a></li>
           <li><a href="paginas/multimedia.html">Multimedia</a></li>
@@ -62,12 +63,12 @@
         </li>
       </ul>          
         
-      <h1 class="titulo">Algo de lo que podes encontrar...</h1>
+      <h1 data-aos="fade-down" class="titulo">Algo de lo que podes encontrar...</h1>
      <div class="imagenesInicio">
-         <div class="imagen1"><img src="imagenes/minimal.jpeg" alt="" width="300px" height="200px"></div>
-         <div class="imagen2"><img src="imagenes/comedor.jpg" alt="" width="300" height="400px
+         <div data-aos="zoom-in" class="imagen1"><img src="imagenes/minimal.jpeg" alt="" width="300px" height="200px"></div>
+         <div data-aos="zoom-in" class="imagen2"><img src="imagenes/comedor.jpg" alt="" width="300" height="400px
           "></div>
-         <div class="imagen3"><img src="imagenes/colchones.jpg" alt="" width="300" height="200"></div>
+         <div data-aos="zoom-in" class="imagen3"><img src="imagenes/colchones.jpg" alt="" width="300" height="200"></div>
       </div>      
       <div class="texto">
       <h2>Subtitulo</h2>
@@ -156,5 +157,9 @@
         <h5>Sitio web creado por Jose Luis Gerbino</h5>
       </footer>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
