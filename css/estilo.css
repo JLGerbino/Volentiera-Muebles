@@ -41,6 +41,11 @@ a {
   justify-content: space-around;
   margin-left: 70px;
 }
+.imgNosotros{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 .multimedia {
   display: flex;
   flex-wrap: wrap;
