@@ -4,33 +4,70 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>contacto</title>
+    <title>Contacto</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../css/estilo.css" />
     <link
       rel="shortcut icon"
       href="../imagenes/20220723_080532.png"
       type="image/x-icon"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
-      <nav>
-        <div class="encabezadoPadre">
-        <div class="logo">
-          <img src="../imagenes/logo sin fondo.png" width="200px" alt="Logo" />
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid navegador">
+          <a class="navbar-brand" href="#"
+            ><img src="/imagenes/logo sin fondo.png" width="200px" alt="Logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul data-aos="fade-left" class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="multimedia.html">Multimedia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalogo.html">Catalogo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contactanos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="frecuentes.html"
+                  >Preguntas frecuentes</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <ul data-aos="fade-left" class="encabezado">
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="multimedia.html">Multimedia</a></li>
-          <li><a href="catalogo.html">Catalogo</a></li>
-          <li><a href="contacto.html">Contactanos</a></li>
-          <li><a href="frecuentes.html">Preguntas frecuentes</a></li>
-        </ul>
       </nav>
-    </div>
     </header>
+    <main>
       <ul class="tarjetaRedes">
         <li>
           <a
@@ -62,35 +99,47 @@
           /></a>
         </li>
       </ul>
-      <h1 data-aos="fade-down">Contactanos</h1>       
+      <h1 data-aos="fade-down">Contactanos</h1>
       <section class="contenedorContacto">
-       <form action="" class="contacto">
-         <div> 
-          <input type="text" placeholder="Ingrese su nombre" id="nombre" />
-          <input type="text" placeholder="Ingrese su apellido" id="apellido" />
-          <input type="email" placeholder="Ingrese su email" id="email" />
-        </div>
-        <div>
-          <textarea name="comentarios" id="comentarios" cols="20" rows="10" placeholder="Comentarios"></textarea>
-        </div>
-        <div>
-          <input class="boton" type="submit" />
-        </div>        
-      </form>
-      <br><br><br><br>
-      <br><br><br><br>
+        <form action="" class="contacto">
+          <div>
+            <input type="text" placeholder="Ingrese su nombre" id="nombre" />
+            <input
+              type="text"
+              placeholder="Ingrese su apellido"
+              id="apellido"
+            />
+            <input type="email" placeholder="Ingrese su email" id="email" />
+          </div>
+          <div>
+            <textarea
+              name="comentarios"
+              id="comentarios"
+              cols="22"
+              rows="9"
+              placeholder="Comentarios"
+            ></textarea>
+          </div>
+          <div>
+            <input class="boton" type="submit" />
+          </div>
+        </form>
+        <br /><br /><br /><br />
+        <br /><br /><br /><br />
         <div class="contactoMapa">
-          <a class="mapa"
-           href="https://www.google.com/maps/place/Volentiera+Muebles/@-33.230965,-60.3297086,13.93z/data=!4m5!3m4!1s0x95b76c4032f7a54b:0xca299d77a2506f4c!8m2!3d-33.2297142!4d-60.3277378"
-           target="_blank"
-           ><img
-           src="../imagenes/mapa.png"
-           alt="Mapa"
-           height="250px"
-           width="250px"
-           /></a>
+          <a
+            class="mapa"
+            href="https://www.google.com/maps/place/Volentiera+Muebles/@-33.230965,-60.3297086,13.93z/data=!4m5!3m4!1s0x95b76c4032f7a54b:0xca299d77a2506f4c!8m2!3d-33.2297142!4d-60.3277378"
+            target="_blank"
+            ><img
+              src="../imagenes/mapa.png"
+              alt="Mapa"
+              height="250px"
+              width="250px"
+          /></a>
         </div>
       </section>
+    </main>
     <footer class="pie">
       <footer class="pie1">
         <img src="../imagenes/logo sin fondo.png" width="200px" alt="Logo" />
@@ -143,5 +192,11 @@
     <script>
       AOS.init();
     </script>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

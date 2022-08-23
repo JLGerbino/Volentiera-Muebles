@@ -4,111 +4,201 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>desafio2</title>
+    <title>Volentiera Muebles</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/estilo.css" />
     <link
       rel="shortcut icon"
       href="imagenes/20220723_080532.png"
       type="image/x-icon"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
-  <body class="gridPadre">
+  <body>
     <header>
-      <nav>
-        <div class="encabezadoPadre">
-        <div class="logo">
-          <img src="imagenes/logo sin fondo.png" width="200px" alt="Logo" />
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid navegador">
+          <a class="navbar-brand" href="#"
+            ><img src="/imagenes/logo sin fondo.png" width="200px" alt="Logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul data-aos="fade-left" class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/paginas/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/paginas/multimedia.html"
+                  >Multimedia</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/paginas/catalogo.html">Catalogo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/paginas/contacto.html"
+                  >Contactanos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/paginas/frecuentes.html"
+                  >Preguntas frecuentes</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <ul data-aos="fade-left" class="encabezado">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="paginas/nosotros.html">Nosotros</a></li>
-          <li><a href="paginas/multimedia.html">Multimedia</a></li>
-          <li><a href="paginas/catalogo.html">Catalogo</a></li>
-          <li><a href="paginas/contacto.html">Contactanos</a></li>
-          <li><a href="paginas/frecuentes.html">Preguntas frecuentes</a></li>
-        </ul>
-        </nav>
-    </div>
-    </header>   
-      <ul class="tarjetaRedes">
-        <li>
-          <a
-            href="https://www.facebook.com/profile.php?id=100011316737380"
-            target="_blank"
-            ><img
-              src="imagenes/face.png"
-              alt="Facebook"
-              height="30px"
-              width="30px"
-          /></a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/volentieramuebles/" target="_blank"
-            ><img
-              src="imagenes/insta.png"
-              alt="Instagram"
-              height="30px"
-              width="30px"
-          /></a>
-        </li>
-        <li>
-          <a href=""
-            ><img
-              src="imagenes/whats.jpg"
-              alt="WhatsApp"
-              height="30px"
-              width="30px"
-          /></a>
-        </li>
-      </ul>          
-        
-      <h1 data-aos="fade-down" class="titulo">Algo de lo que podes encontrar...</h1>
-     <div class="imagenesInicio">
-         <div data-aos="zoom-in" class="imagen1"><img src="imagenes/minimal.jpeg" alt="" width="300px" height="200px"></div>
-         <div data-aos="zoom-in" class="imagen2"><img src="imagenes/comedor.jpg" alt="" width="300" height="400px
-          "></div>
-         <div data-aos="zoom-in" class="imagen3"><img src="imagenes/colchones.jpg" alt="" width="300" height="200"></div>
-      </div>      
+      </nav>
+    </header>
+    <main class="container">
+      <h1 data-aos="fade-down" class="titulo">
+        Algo de lo que podes encontrar...
+      </h1>
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="/imagenes/rack colgado1.png"
+              height="600px"
+              class="d-block w-100 img-fluid"
+              alt="Rack"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/imagenes/oficina1.png"
+              height="600x"
+              class="d-block w-100 img-fluid"
+              alt="Escritorio"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/imagenes/minimal1.jpeg"
+              height="600x"
+              class="d-block w-100 img-fluid"
+              alt="Minimal"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
       <div class="texto">
-      <h2>Subtitulo</h2>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni eius et
-        iure sequi assumenda, voluptatem maxime officia quo laudantium id,
-        accusamus esse necessitatibus sed! Vero harum velit similique modi,
-        autem vel error dolorem est iure corrupti voluptate ex sapiente fugit
-        corporis incidunt sit laboriosam quis perferendis. Quod mollitia
-        doloribus quidem. Dicta aliquam accusantium ab. Aliquam ipsam laboriosam
-        dolorum nemo, voluptatum nostrum debitis velit. Rem, fugit! Velit animi,
-        perferendis beatae quam quia ullam eius. Excepturi suscipit veniam
-        placeat veritatis sapiente minus ipsam necessitatibus provident fugit
-        illo dolorem dicta, nisi beatae, ipsum impedit praesentium voluptate?
-        Eligendi distinctio dolorum et veniam explicabo veritatis tempora nulla
-        excepturi minus, sapiente doloremque, soluta earum autem! Facilis
-        praesentium nobis mollitia nisi! Pariatur perspiciatis quod minima animi
-        libero enim accusantium tempore explicabo ipsa aut atque eos officia
-        dolore a officiis, beatae quaerat? Qui doloremque natus, ab corporis
-        nesciunt iusto, dolor ad repellendus sint mollitia numquam porro,
-        dolorem facilis reprehenderit. Quos, tempora. Eius voluptatibus natus
-        nobis dicta fugit quasi tempora repellat qui doloribus quo maxime
-        laboriosam, nihil nam laudantium ratione adipisci minima. Cum beatae
-        totam numquam aspernatur? Obcaecati facere incidunt natus consequatur
-        neque soluta ab, laborum quaerat. Facilis quidem esse repudiandae.
-        Minima consequuntur vitae sit perspiciatis dignissimos, ex maiores dicta
-        ullam adipisci libero sapiente ab exercitationem architecto non totam
-        eaque, distinctio cupiditate quaerat fugiat mollitia animi voluptates
-        doloremque ea qui! Quam accusantium architecto nesciunt! Quia autem
-        velit fugiat itaque vitae unde vero nesciunt consequatur tenetur ipsum
-        accusamus dignissimos deserunt cum, molestias quam facilis voluptate.
-        Magni nesciunt repellat optio. Dignissimos animi voluptatibus fugit
-        optio eaque non ducimus illo impedit, laudantium, sit aspernatur? Illo
-        distinctio assumenda minus vel officia asperiores dolorum, rerum
-        mollitia excepturi minima beatae aut, id recusandae consequuntur est ex,
-        architecto deserunt fugiat nulla. Illo, architecto velit accusantium
-        quas nihil soluta veniam necessitatibus eligendi reiciendis magni.
-        Nobis, natus aut.
-      </p>
-    </div>
+        <ul class="tarjetaRedes">
+          <li>
+            <a
+              href="https://www.facebook.com/profile.php?id=100011316737380"
+              target="_blank"
+              ><img
+                src="imagenes/face.png"
+                alt="Facebook"
+                height="30px"
+                width="30px"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/volentieramuebles/"
+              target="_blank"
+              ><img
+                src="imagenes/insta.png"
+                alt="Instagram"
+                height="30px"
+                width="30px"
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img
+                src="imagenes/whats.jpg"
+                alt="WhatsApp"
+                height="30px"
+                width="30px"
+            /></a>
+          </li>
+        </ul>
+        <h2>Subtitulo</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni eius
+          et iure sequi assumenda, voluptatem maxime officia quo laudantium id,
+          accusamus esse necessitatibus sed! Vero harum velit similique modi,
+          autem vel error dolorem est iure corrupti voluptate ex sapiente fugit
+          corporis incidunt sit laboriosam quis perferendis. Quod mollitia
+          doloribus quidem. Dicta aliquam accusantium ab. Aliquam ipsam
+          laboriosam dolorum nemo, voluptatum nostrum debitis velit. Rem, fugit!
+          Velit animi, perferendis beatae quam quia ullam eius. Excepturi
+          suscipit veniam placeat veritatis sapiente minus ipsam necessitatibus
+          provident fugit illo dolorem dicta, nisi beatae, ipsum impedit
+          praesentium voluptate? Eligendi distinctio dolorum et veniam explicabo
+          veritatis tempora nulla excepturi minus, sapiente doloremque, soluta
+          earum autem! Facilis praesentium nobis mollitia nisi! Pariatur
+          perspiciatis quod minima animi libero enim accusantium tempore
+          explicabo ipsa aut atque eos officia dolore a officiis, beatae
+          quaerat? Qui doloremque natus, ab corporis nesciunt iusto, dolor ad
+          repellendus sint mollitia numquam porro, dolorem facilis
+          reprehenderit. Quos, tempora. Eius voluptatibus natus nobis dicta
+          fugit quasi tempora repellat qui doloribus quo maxime laboriosam,
+          nihil nam laudantium ratione adipisci minima. Cum beatae totam numquam
+          aspernatur? Obcaecati facere incidunt natus consequatur neque soluta
+          ab, laborum quaerat. Facilis quidem esse repudiandae. Minima
+          consequuntur vitae sit perspiciatis dignissimos, ex maiores dicta
+          ullam adipisci libero sapiente ab exercitationem architecto non totam
+          eaque, distinctio cupiditate quaerat fugiat mollitia animi voluptates
+          doloremque ea qui! Quam accusantium architecto nesciunt! Quia autem
+          velit fugiat itaque vitae unde vero nesciunt consequatur tenetur ipsum
+          accusamus dignissimos deserunt cum, molestias quam facilis voluptate.
+          Magni nesciunt repellat optio. Dignissimos animi voluptatibus fugit
+          optio eaque non ducimus illo impedit, laudantium, sit aspernatur? Illo
+          distinctio assumenda minus vel officia asperiores dolorum, rerum
+          mollitia excepturi minima beatae aut, id recusandae consequuntur est
+          ex, architecto deserunt fugiat nulla. Illo, architecto velit
+          accusantium quas nihil soluta veniam necessitatibus eligendi
+          reiciendis magni. Nobis, natus aut.
+        </p>
+      </div>
+    </main>
     <footer class="pie">
       <footer class="pie1">
         <img src="imagenes/logo sin fondo.png" width="200px" alt="Logo" />
@@ -161,5 +251,11 @@
     <script>
       AOS.init();
     </script>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -6,26 +6,10 @@
 body {
   font-family: "EB Garamond", serif;
 }
-header {
+.navegador {
   background-color: rgb(224, 225, 236);
-  grid-area: header;
 }
-
-.encabezadoPadre {
-  display: grid;
-  grid-template-columns: 1fr auto;
-}
-.logo {
-  display: flex;
-  width: 20%;
-}
-.encabezado {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-}
-.encabezado li {
-  list-style: none;
+.nav-link {
   margin: 10px;
   padding: 10px;
   color: rgb(150, 33, 63);
@@ -33,12 +17,9 @@ header {
   font-weight: bold;
 }
 main {
-  height: 100%;
-  margin-top: 50px;
   margin-bottom: 150px;
   padding-top: 50px;
   padding-bottom: 50px;
-  grid-area: main;
 }
 .tarjetaRedes {
   display: inline-block;
@@ -53,25 +34,12 @@ a {
   color: rgb(150, 33, 63);
   text-decoration: none;
 }
-.imagenesInicio {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 10px;
-  padding: 10px;
-  justify-content: space-around;
-}
 .texto {
   text-align: center;
-  grid-area: tex;
 }
-
-/*catalogo*/
 .imagenesCatalogo {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 10px;
-  padding: 10px;
   justify-content: space-around;
+  margin-left: 70px;
 }
 .multimedia {
   display: flex;
@@ -83,7 +51,6 @@ a {
 h2 {
   color: rgb(150, 33, 63);
 }
-/*contacto*/
 .contenedorContacto {
   text-align: center;
   margin: 50px;
@@ -103,7 +70,6 @@ h2 {
   margin: 10px auto;
 }
 footer {
-  grid-area: footer;
   background-color: rgb(69, 61, 68);
 }
 .pie {
@@ -121,11 +87,10 @@ footer {
   display: inline-block;
 }
 h1 {
+  font-family: "EB Garamond", serif;
   margin-top: 60px;
-  margin-bottom: 90px;
   color: rgb(150, 33, 63);
   text-align: center;
-  grid-area: h1;
 }
 .boton {
   background-color: white;
@@ -136,58 +101,19 @@ h1 {
   padding: 2px;
   margin-bottom: 50px;
 }
-.imagenesInicio {
-  grid-area: img1;
-}
-.gridPadre {
-  display: grid;
-  grid-template-areas:
-    "header header header header"
-    "h1 h1 h1 h1"
-    "img1 img1 img1 img1"
-    "tex tex tex tex"
-    "footer footer footer footer";
-}
-.gridNosotros {
-  display: grid;
-  grid-template-areas:
-    "header header header header"
-    "h1 h1 h1 h1"
-    "img1 img1 tex tex"
-    "img1 img1 tex tex"
-    "footer footer footer footer";
-}
-.gridCatalogo {
-  display: grid;
-  grid-template-areas:
-    "header header header header"
-    "h1 h1 h1 h1"
-    "img1 img1 img1 img1"
-    "img1 img1 img1 img1"
-    "footer footer footer footer";
-}
-.aniImag{    
+.aniImag {
   transition: height 0.1s, width 0.1s;
 }
-.aniImag :hover{
-  height: 200px ;
-  width: 250px;    
+.aniImag :hover {
+  height: 200px;
+  width: 250px;
 }
-/*responsive mobile*/
 @media (max-width: 400px) {
   .texto {
     display: none;
   }
-  h1{font-size: 1.5rem;}
-
-  .gridPadre {
-    display: grid;
-    grid-template-areas:
-      "header header"
-      "h1 h1"
-      "img1 img1"
-      "tex tex"
-      "footer footer";
+  h1 {
+    font-size: 1.5rem;
   }
   .encabezado {
     display: none;
@@ -196,4 +122,3 @@ h1 {
     display: none;
   }
 }
-/*prueba de rama tote*/
