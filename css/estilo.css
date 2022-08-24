@@ -37,21 +37,22 @@ a {
 .texto {
   text-align: center;
 }
-.imagenesCatalogo {
-  justify-content: space-around;
-  margin-left: 70px;
-}
 .imgNosotros{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin: 40px;
+}
+.imagenesCatalogo{
+  justify-content: center;
+  margin: 50px;
 }
 .multimedia {
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px;
   margin-bottom: 30px;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 h2 {
   color: rgb(150, 33, 63);
@@ -126,4 +127,5 @@ h1 {
   .pie2 {
     display: none;
   }
+  .imagenesCatalogo{margin-left: 70px;}
 }
