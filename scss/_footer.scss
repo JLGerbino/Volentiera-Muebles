@@ -1,0 +1,24 @@
+footer {
+    background-color: rgb(69, 61, 68);
+    font-family: $familiaFuente;
+    color: $colorPrincipal;
+    a{
+    color: $colorPrincipal;
+    text-decoration: none;
+    }
+  /*.pie {
+    color: rgb(150, 33, 63);
+    width: 100%;}*/
+ 
+  .pie1 {
+    display: inline-block;    
+  }
+  .pie2 {
+    display: inline-block;
+    padding: 0px 50px 10px 50px;
+  }
+  .pie3 {
+    display: inline-block;
+  }
+
+}

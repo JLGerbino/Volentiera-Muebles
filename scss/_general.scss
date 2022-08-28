@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+@mixin estiloCuerpo {
+   color: $colorPrincipal;
+   font-family: $familiaFuente;
+   text-align: center;        
+}
+body{font-family: $familiaFuente;}
+.tarjetaRedes {
+    display: inline-block;
+    position: fixed;
+    right: 0;
+    top: 45%;
+  }
+  .tarjetaRedes li {
+    list-style: none;
+  }
+  h1{
+    @include estiloCuerpo();
+    margin-top: 60px;
+    font-size: $tamFuente;   
+  }
+  h2{
+    @include estiloCuerpo();
+    font-size: $tamFuente - 1;    
+  }
+  h3{
+    text-align: center;
+  }
+  main {
+    margin-bottom: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .imgNosotros{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 40px;
+  }
+  .multimedia {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+  }
+  .imagenesCatalogo{
+    justify-content: center;
+    margin: 50px;
+  } 
+  .contenedorContacto {
+    text-align: center;
+    margin: 50px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .contacto {
+    width: 300px;
+    height: 250px;
+    align-content: center;
+    justify-content: center;
+  }
+  .contacto input {
+    margin: 10px auto;
+  }
+  .boton {
+    background-color: white;
+    color: rgb(150, 33, 63);
+    border-radius: 6px;
+    height: 40px;
+    width: 100px;
+    padding: 2px;
+    margin-bottom: 50px;    
+  }
+  .aniImag {
+    transition: height 0.1s, width 0.1s;
+  }
+  .aniImag {
+    & :hover{
+    height: 200px;
+    width: 250px;
+    }
+  }
+  @media (max-width: 400px) {
+    .texto {
+      display: none;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+    .encabezado {
+      display: none;
+    }
+    .pie2 {
+      display: none;
+    }
+    .imagenesCatalogo{margin-left: 70px;}
+  }
+  
