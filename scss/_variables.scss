@@ -2,10 +2,25 @@ $colorPrincipal: rgb(150, 33, 63);
 $familiaFuente: EB Garamond, serif;
 $tamFuente: 2.5rem;
 
-/*@mixin estiloCuerpo {
-    color: $colorPrincipal;
-    font-family: $familiaFuente;
-    text-align: center;        
-}*/
+@mixin estiloCuerpo {
+  color: $colorPrincipal;
+  font-family: $familiaFuente;
+  text-align: center;
+}
 
+$mapSocial: (
+  facebook: blue,
+  instagram: rgb(192, 76, 31),
+  whats: green,
+);
 
+@each $social, $color in $mapSocial {
+  .#{$social} {
+    color: $color;
+  }
+}
+$estBoton: (
+  color: white,
+  fondo: rgb(150, 33, 63),
+  borde: rgb(150, 33, 63),
+);

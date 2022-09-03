@@ -1,8 +1,12 @@
-/*@mixin estiloCuerpo {
-    color: $colorPrincipal;
-    font-family: $familiaFuente;
-    text-align: center;        
-}*/
+.facebook {
+  color: blue; }
+
+.instagram {
+  color: #c04c1f; }
+
+.whats {
+  color: green; }
+
 header .navegador {
   background-color: #e0e1ec; }
 
@@ -14,20 +18,13 @@ header .nav-link {
   padding: 10px;
   color: #96213f;
   font-size: 20px;
-  font-weight: bold;
-  /*li{
-        color: rgb(150, 33, 63);
-    }*/ }
+  font-weight: bold; }
 
 footer {
   background-color: #453d44;
   font-family: EB Garamond, serif;
-  color: #96213f;
-  /*.pie {
-    color: rgb(150, 33, 63);
-    width: 100%;}*/ }
+  color: #96213f; }
   footer a {
-    color: #96213f;
     text-decoration: none; }
   footer .pie1 {
     display: inline-block; }
@@ -51,7 +48,9 @@ body {
   top: 45%; }
 
 .tarjetaRedes li {
-  list-style: none; }
+  list-style: none;
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 h1 {
   color: #96213f;
@@ -74,18 +73,21 @@ main {
   padding-top: 50px;
   padding-bottom: 50px; }
 
-.imgNosotros {
+.migasPan a {
+  list-style: none;
+  color: #96213f;
+  font-family: EB Garamond, serif;
+  text-decoration: none; }
+
+.imgNosotros, .multimedia {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 40px; }
+  margin: 30px; }
 
 .multimedia {
-  display: flex;
-  flex-wrap: wrap;
   margin-top: 30px;
-  margin-bottom: 30px;
-  justify-content: space-between; }
+  margin-bottom: 30px; }
 
 .imagenesCatalogo {
   justify-content: center;
@@ -110,8 +112,9 @@ main {
   margin: 10px auto; }
 
 .boton {
-  background-color: white;
-  color: #96213f;
+  background-color: #96213f;
+  color: white;
+  border-color: #96213f;
   border-radius: 6px;
   height: 40px;
   width: 100px;

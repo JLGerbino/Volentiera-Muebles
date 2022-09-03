@@ -1,16 +1,15 @@
-header{
-    .navegador{background-color: rgb(224, 225, 236);}
-    .nav{background-color: rgb(224, 225, 236);}
-    .nav-link{      
+header {
+  .navegador {
+    background-color: rgb(224, 225, 236);
+  }
+  .nav {
+    background-color: rgb(224, 225, 236);
+  }
+  .nav-link {
     margin: 10px;
     padding: 10px;
     color: $colorPrincipal;
     font-size: 20px;
     font-weight: bold;
-     
-    /*li{
-        color: rgb(150, 33, 63);
-    }*/
-}
-
+  }
 }

@@ -1,0 +1,7 @@
+Hola Eduardo, te dejo un detalle de los cambios realizados.
+_Cambie los titulos de la paginas para que nuetren la ruta.
+_Puse los meta description.
+_tengo una H1 por pagina y los H siguen la estructura jerarquica.
+_Todos los enlaces son navegables.
+_Agregue breadcrumb.
+_El index y las carpetas esta organizadas.
