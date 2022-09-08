@@ -23,16 +23,23 @@ header .nav-link {
 footer {
   background-color: #453d44;
   font-family: EB Garamond, serif;
-  color: #96213f; }
+  color: white; }
   footer a {
-    text-decoration: none; }
+    text-decoration: none;
+    margin: 10px; }
   footer .pie1 {
-    display: inline-block; }
+    display: inline-block;
+    font-family: EB Garamond, serif;
+    padding: 10px; }
   footer .pie2 {
     display: inline-block;
-    padding: 0px 50px 10px 50px; }
+    /*padding: 0px 50px 10px 50px;*/
+    font-family: EB Garamond, serif;
+    padding: 10px; }
   footer .pie3 {
-    display: inline-block; }
+    display: inline-block;
+    font-family: EB Garamond, serif;
+    padding: 10px; }
 
 * {
   margin: 0;
@@ -63,10 +70,49 @@ h2 {
   color: #96213f;
   font-family: EB Garamond, serif;
   text-align: center;
-  font-size: 1.5rem; }
+  font-size: 2rem; }
 
 h3 {
-  text-align: center; }
+  text-align: center;
+  font-size: 1.5rem;
+  color: #96213f; }
+
+h4 {
+  text-align: center;
+  font-size: 1rem;
+  font-family: EB Garamond, serif; }
+
+p {
+  text-align: center;
+  font-size: 1rem;
+  font-family: EB Garamond, serif;
+  color: #96213f;
+  justify-content: center; }
+
+.contenedorMas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px; }
+
+.tamImagen img {
+  width: auto;
+  height: 600px;
+  max-height: 600px; }
+
+.vMas {
+  height: 20px;
+  width: 90px;
+  background-color: #96213f; }
+  .vMas a {
+    color: white;
+    text-decoration: none; }
+
+.vMas :hover {
+  background-color: white;
+  color: #96213f;
+  text-decoration: none;
+  border-color: #96213f; }
 
 main {
   margin-bottom: 150px;
@@ -83,7 +129,15 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 30px; }
+  margin: 30px;
+  margin-top: 10px;
+  box-shadow: 10px 2px 10px;
+  opacity: 90%; }
+
+.texNosotros {
+  text-align: center;
+  margin-top: 40px;
+  text-justify: center; }
 
 .multimedia {
   margin-top: 30px;
@@ -93,23 +147,39 @@ main {
   justify-content: center;
   margin: 50px; }
 
-.contenedorContacto {
-  text-align: center;
-  margin: 50px;
-  padding: 30px;
+.imagenesInicio {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  .imagenesInicio img {
+    border-radius: 5px; }
+
+#contacto {
+  margin-top: 50px;
+  margin-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center; }
 
-.contacto {
-  width: 300px;
-  height: 250px;
-  align-content: center;
-  justify-content: center; }
+#contacto form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 50vw; }
 
-.contacto input {
+.campo {
+  display: block;
+  width: 50%;
+  padding: 10px;
   margin: 10px auto; }
+
+.tamBotonForm {
+  width: 200px;
+  margin: auto; }
+
+p {
+  color: #96213f;
+  font-family: EB Garamond, serif; }
 
 .boton {
   background-color: #96213f;
@@ -117,9 +187,10 @@ main {
   border-color: #96213f;
   border-radius: 6px;
   height: 40px;
-  width: 100px;
+  width: 200px;
   padding: 2px;
-  margin-bottom: 50px; }
+  margin: auto;
+  margin-bottom: 30px; }
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(150, 33, 63, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
@@ -132,6 +203,9 @@ main {
 .navbar-toggler {
   border: 0; }
 
+.texFrecuentes {
+  margin-top: 50px; }
+
 .aniImag {
   transition: height 0.1s, width 0.1s; }
 
@@ -139,14 +213,28 @@ main {
   height: 200px;
   width: 250px; }
 
+@media (max-width: 790px) {
+  #contacto form {
+    width: 90vw; }
+  .campo {
+    width: 60%; } }
+
 @media (max-width: 400px) {
   .texto {
     display: none; }
   h1 {
-    font-size: 1.5rem; }
+    font-size: 2rem; }
   .encabezado {
     display: none; }
   .pie2 {
     display: none; }
   .imagenesCatalogo {
-    margin-left: 70px; } }
+    margin-left: 70px; }
+  #contacto form {
+    width: 90vw; }
+  .campo {
+    width: 90%; }
+  h2 {
+    font-size: 1.5rem; }
+  h3 {
+    font-size: 1rem; } }

@@ -81,12 +81,7 @@
                       <span itemprop="name">Contacto</span>
                   </a>
                   <meta itemprop="position" content="2">
-              </li>
-              <!-- <li class="breadcrumb-item active" itemscope itemprop="itemListElement">
-                  <span itemprop="name">Página actual</span>
-                  <meta itemprop="position" content="3">
-              </li>
-          </ol> -->
+              </li>             
       </nav>
         </div>
     <main>
@@ -122,32 +117,18 @@
         </li>
       </ul>
       <h1 data-aos="fade-down">Contactanos</h1>
-      <section class="contenedorContacto">
-        <form action="" class="contacto">
-          <div>
-            <input type="text" placeholder="Ingrese su nombre" autofocus autocomplete="off" id="nombre" />
-            <input
-              type="text"
-              placeholder="Ingrese su apellido" autocomplete="off"
-              id="apellido"
-            />
-            <input type="email" placeholder="Ingrese su email" autocomplete="off" id="email" />
-          </div>
-          <div>
-            <textarea
-              name="comentarios"
-              id="comentarios"
-              cols="22"
-              rows="9"
-              placeholder="Comentarios"
-            ></textarea>
-          </div>
-          <div>
-            <input class="boton" type="submit" />
-          </div>
+      <section id="contacto">
+        <form class="formulario">
+            <h3>Dejanos tu consulta</h3>
+            <div class="contenedorInput">
+                <input class="campo" type="text" placeholder="Ingrese su nombre" autofocus autocomplete="off" id="nombre">
+                <input class="campo" type="text" placeholder="Ingrese su apellido" autocomplete="off" id="apellido">
+                <input class="campo" type="email" placeholder="Ingrese su email" autocomplete="off" id="email">
+            </div>
+            <textarea class="campo" name="mensaje" id="mensaje" cols="30" rows="10"
+                placeholder="Ingrese su mensaje"></textarea>
+            <input class="boton" type="submit">
         </form>
-        <br /><br /><br /><br />
-        <br /><br /><br /><br />
         <div class="contactoMapa">
           <a
             class="mapa"
@@ -160,7 +141,7 @@
               width="250px"
           /></a>
         </div>
-      </section>
+    </section>     
     </main>
     <footer class="pie">
       <footer class="pie1">

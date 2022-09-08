@@ -1,10 +1,11 @@
 footer {
   background-color: rgb(69, 61, 68);
   font-family: $familiaFuente;
-  color: $colorPrincipal;
+  color: white;
   a {
     //color: $colorPrincipal;//
     text-decoration: none;
+    margin: 10px;
   }
   //.pie {//
   //color: rgb(150, 33, 63);//
@@ -12,12 +13,18 @@ footer {
 
   .pie1 {
     display: inline-block;
+    font-family: $familiaFuente;
+    padding: 10px;
   }
   .pie2 {
     display: inline-block;
-    padding: 0px 50px 10px 50px;
+    /*padding: 0px 50px 10px 50px;*/
+    font-family: $familiaFuente;
+    padding: 10px;
   }
   .pie3 {
     display: inline-block;
+    font-family: $familiaFuente;
+    padding: 10px;
   }
 }
