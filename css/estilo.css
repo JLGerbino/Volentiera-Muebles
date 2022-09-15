@@ -229,6 +229,9 @@ p {
 @media (max-width: 790px) {
   #contacto form {
     width: 90vw; }
+  .tamImagen img {
+    height: 450px;
+    object-fit: cover; }
   .campo {
     width: 60%; } }
 
