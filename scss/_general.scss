@@ -52,11 +52,10 @@ p{
   align-items: center;
   margin-top: 60px;
 }
-/*.tamImagen img {
-  width: auto;
-  height: 600px;
-  max-height: 600px;
-}*/
+.tamImagen img {  
+  height: 600px;  
+  object-fit: cover;
+}
 .vMas{ 
   height: 20px;
   width: 90px; 
@@ -80,12 +79,15 @@ main {
   padding-bottom: 50px;
 }
 .migasPan {
-  a {
+  a {    
     list-style: none;
     color: $colorPrincipal;
     font-family: $familiaFuente;
     text-decoration: none;
   }
+.espacioPan{
+  padding-left: 15px;
+}
 }
 .imgNosotros {
   display: flex;
@@ -168,8 +170,17 @@ p {
 .navbar-toggler {
   border: 0;
 }
-.texFrecuentes{
+/*.texFrecuentes{
   margin-top: 50px;
+}*/
+.estiloPreguntas{
+  font-family: $familiaFuente;
+  color: $colorPrincipal;
+  font-size: $tamFuente - 1;
+}
+
+.estiloRespuestas{
+  color: $colorPrincipal;
 }
 .aniImag {
   transition: height 0.1s, width 0.1s;
@@ -221,4 +232,15 @@ p {
   h3 {    
     font-size: 1rem;      
   }
-}
+  .tamImagen img {    
+    height: 300px;    
+    object-fit: cover;
+  }
+  .estiloPreguntas{
+    font-size: $tamFuente - 1.3;
+  }
+  .acordionAncho{
+    width: 90%;
+    margin-left: 15px;
+  }
+} 

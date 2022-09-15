@@ -7,6 +7,9 @@
 .whats {
   color: green; }
 
+.accordion-button:is(.collapsed)::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2396213f'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>"); }
+
 header .navegador {
   background-color: #e0e1ec; }
 
@@ -96,9 +99,8 @@ p {
   margin-top: 60px; }
 
 .tamImagen img {
-  width: auto;
   height: 600px;
-  max-height: 600px; }
+  object-fit: cover; }
 
 .vMas {
   height: 20px;
@@ -124,6 +126,9 @@ main {
   color: #96213f;
   font-family: EB Garamond, serif;
   text-decoration: none; }
+
+.migasPan .espacioPan {
+  padding-left: 15px; }
 
 .imgNosotros, .multimedia {
   display: flex;
@@ -203,8 +208,16 @@ p {
 .navbar-toggler {
   border: 0; }
 
-.texFrecuentes {
-  margin-top: 50px; }
+/*.texFrecuentes{
+  margin-top: 50px;
+}*/
+.estiloPreguntas {
+  font-family: EB Garamond, serif;
+  color: #96213f;
+  font-size: 1.5rem; }
+
+.estiloRespuestas {
+  color: #96213f; }
 
 .aniImag {
   transition: height 0.1s, width 0.1s; }
@@ -237,4 +250,12 @@ p {
   h2 {
     font-size: 1.5rem; }
   h3 {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  .tamImagen img {
+    height: 300px;
+    object-fit: cover; }
+  .estiloPreguntas {
+    font-size: 1.2rem; }
+  .acordionAncho {
+    width: 90%;
+    margin-left: 15px; } }
