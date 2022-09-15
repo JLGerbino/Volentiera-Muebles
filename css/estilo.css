@@ -229,17 +229,14 @@ p {
 @media (max-width: 790px) {
   #contacto form {
     width: 90vw; }
-  .tamImagen img {
-    height: 450px;
-    object-fit: cover; }
   .campo {
     width: 60%; } }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .texto {
     display: none; }
   h1 {
-    font-size: 2rem; }
+    font-size: 1.5rem; }
   .encabezado {
     display: none; }
   .pie2 {
