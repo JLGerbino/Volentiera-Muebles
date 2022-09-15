@@ -230,7 +230,11 @@ p {
   #contacto form {
     width: 90vw; }
   .campo {
-    width: 60%; } }
+    width: 60%; }
+  .texto {
+    display: none; }
+  h1 {
+    font-size: 2rem; } }
 
 @media (max-width: 450px) {
   .texto {

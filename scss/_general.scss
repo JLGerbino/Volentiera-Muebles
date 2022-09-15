@@ -198,13 +198,19 @@ p {
    .campo {
     width: 60%;
    }
+   .texto {
+    display: none;
+  }
+  h1{
+    font-size: $tamFuente - 0.5;
+  }
 }
 @media (max-width: 450px) {
   .texto {
     display: none;
   }
   h1 {
-    font-size: 1.5rem;
+    font-size: $tamFuente - 1;
   }
   .encabezado {
     display: none;
