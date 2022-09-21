@@ -9,9 +9,9 @@ $tamFuente: 2.5rem;
 }
 
 $mapSocial: (
-  facebook: blue,
-  instagram: rgb(192, 76, 31),
-  whats: green,
+  facebook: white,
+  instagram: white,
+  whats: white,
 );
 
 @each $social, $color in $mapSocial {

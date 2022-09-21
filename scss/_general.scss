@@ -62,10 +62,10 @@ p{
   background-color: $colorPrincipal;  
   a{color: white;
   text-decoration: none;
-  }
+  }  
 }
 .vMas{
-  & :hover {    
+  & :hover{    
     background-color: white;
     color: $colorPrincipal;
     text-decoration: none;
@@ -74,7 +74,7 @@ p{
 }
 
 main {
-  margin-bottom: 150px;
+  margin-bottom: 80px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -95,13 +95,13 @@ main {
   justify-content: space-around;
   margin: 30px;
   margin-top: 10px;
-  box-shadow: 10px 2px 10px;  
-  opacity: 90%;
+ /* box-shadow: 10px 2px 10px;  
+  opacity: 90%;*/
 
 }
 .texNosotros{
   text-align: center;
-  margin-top: 40px;
+  margin-top: 10px;
   text-justify: center;
 }
 .multimedia {
@@ -113,12 +113,14 @@ main {
   justify-content: center;
   margin: 50px;
 }
-.imagenesInicio{
-  margin-top: 20px;
-  margin-bottom: 20px;
-  img{
-    border-radius: 5px;
-  }
+.contenedorImg{  
+  margin-top: 40px;
+}
+.imagenesInicio{  
+  margin-top: 50px;
+  margin-bottom: 30px;
+  /*width: 200px;
+  height: 400px;*/
 }
 #contacto {
   margin-top: 50px;
@@ -139,6 +141,10 @@ main {
   width: 50%;
   padding: 10px;
   margin: 10px auto;
+}
+.mapa{
+  width: 400px;
+  height: 300px;
 }
 .tamBotonForm {
   width: 200px;
@@ -187,11 +193,12 @@ p {
 }
 .aniImag {
   & :hover {
-    height: 200px;
-    width: 250px;
+    height: 180px;
+    width: 230px;
+    opacity: 90%;
   }
 }
-@media(max-width:790px){
+@media(max-width:768px){
   #contacto form {
     width: 90vw;       
    }  
@@ -204,8 +211,11 @@ p {
   h1{
     font-size: $tamFuente - 0.5;
   }
+ .texNosotros h3{
+    font-size: $tamFuente - 1.5;
+  }
 }
-@media (max-width: 450px) {
+@media (max-width: 400px) {
   .texto {
     display: none;
   }
@@ -217,6 +227,9 @@ p {
   }
   .pie2 {
     display: none;
+  }
+  .pie3 h5{
+    font-size: 1rem;
   }
   .imagenesCatalogo {
     margin-left: 70px;
@@ -243,5 +256,8 @@ p {
   .acordionAncho{
     width: 90%;
     margin-left: 15px;
+  }
+  .mapa{
+    width: 300px;    
   }
 } 
