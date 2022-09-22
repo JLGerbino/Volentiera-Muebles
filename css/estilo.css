@@ -226,6 +226,20 @@ p {
 .estiloRespuestas {
   color: #96213f; }
 
+.email {
+  text-decoration: none;
+  color: #96213f; }
+
+.btn {
+  background-color: #96213f;
+  border-color: #96213f; }
+
+.tarjetas {
+  margin-top: 30px !important; }
+
+.card {
+  color: #96213f; }
+
 .aniImag {
   transition: height 0.1s, width 0.1s; }
 
@@ -276,4 +290,6 @@ p {
     width: 90%;
     margin-left: 15px; }
   .mapa {
-    width: 300px; } }
+    width: 300px; }
+  .imagenesCatalogo {
+    margin-left: 40px; } }

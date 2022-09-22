@@ -184,8 +184,21 @@ p {
   color: $colorPrincipal;
   font-size: $tamFuente - 1;
 }
-
 .estiloRespuestas{
+  color: $colorPrincipal;
+}
+.email{
+  text-decoration: none;
+  color: $colorPrincipal;
+}
+.btn{
+  background-color: $colorPrincipal;
+  border-color: $colorPrincipal;  
+}
+.tarjetas{
+ margin-top: 30px !important;
+}
+.card{
   color: $colorPrincipal;
 }
 .aniImag {
@@ -213,7 +226,7 @@ p {
   }
  .texNosotros h3{
     font-size: $tamFuente - 1.5;
-  }
+  }  
 }
 @media (max-width: 400px) {
   .texto {
@@ -259,5 +272,8 @@ p {
   }
   .mapa{
     width: 300px;    
+  }
+  .imagenesCatalogo{
+    margin-left: 40px;
   }
 } 
