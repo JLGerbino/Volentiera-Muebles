@@ -3,22 +3,16 @@ footer {
   font-family: $familiaFuente;
   color: white;
   a {
-    //color: $colorPrincipal;//
     text-decoration: none;
     margin: 10px;
   }
-  //.pie {//
-  //color: rgb(150, 33, 63);//
-  //width: 100%;}//
-
   .pie1 {
     display: inline-block;
     font-family: $familiaFuente;
     padding: 10px;
   }
-  .pie2 {    
+  .pie2 {
     display: inline-block;
-    /*padding: 0px 50px 10px 50px;*/
     font-family: $familiaFuente;
     padding: 10px;
   }
